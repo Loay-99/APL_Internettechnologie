@@ -101,14 +101,7 @@ main {
   transform: translateY(00%);
 }
 
-
 #startbtn {
-  color: var(--font-color);
-  background-color: var(--sidebar-color);
-  transition: background 0.3s ease;
-
-}
-.start button {
   padding: 10px 20px;
   cursor: pointer;
   font-weight: bold;
@@ -116,13 +109,15 @@ main {
   border: none;
   border-radius: 20px;
   color: var(--font-color);
-  background-color: var(--sidebar-color);
+  background-color: var(--article-color);
   transition: background 0.3s ease;
-  
+  transform: translateX(20%);
+  transform: translateX(00%);
 }
 
-.start button:hover {
+#startbtn:hover {
   background-color: var(--gold-font);
+  color: var(--main-color);
 }
 
 .qusetions {
@@ -149,7 +144,7 @@ main {
   cursor: pointer;
   transition: background 0.3s ease, color 0.3s ease;
   margin-bottom: 10px;
-  list-style: none; /* Entfernt Aufzählungszeichen */
+  list-style: none; 
 }
 
 .qusetions fieldset ul li:hover {
@@ -242,18 +237,7 @@ footer {
   display: flex;
 }
 
-#startbtn {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
 
-#startbtn:hover {
-  background-color: #0056b3;
-}
 
 #resetButton {
   padding: 10px 20px;
@@ -283,4 +267,13 @@ footer {
   main {
     flex-direction: column;
   }
+}
+
+
+/* Media Queries für Mobilgeräte */
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+
 }
